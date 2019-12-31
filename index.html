@@ -1,0 +1,59 @@
+<!-- Name: Aaditya Mukherjee
+Affiliation: Computer Science Student at UMass Lowell
+E-mail: Aaditya_Mukherjee@student.uml.edu
+91.61 GUI Programming I, Assignment 7
+    Sources: https://www.youtube.com/watch?v=zhxQhgm4yk4&t=200s    (The first two sources were used to figure out how to make multiplication tables with for loops)
+           : https://www.youtube.com/watch?v=zhxQhgm4yk4&t=200s
+           :https://github.com/jquery-validation/jquery-validation/issues/2030 (This page was used to make the greaterThan function)
+           :https://www.w3schools.com/
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Bootstrap CDN added for applying easy css to the multiplication table and button -->
+    <link href = "CSS\table.css" rel = "stylesheet">
+
+    <title>Javascript table</title>
+  </head>
+  <body>
+    <div id = "wrapper">
+      <div id = "header">
+
+   <h1>Multiplication Table</h1>
+   <h2>(Positive integers only!)</h2>
+
+ </div>
+<!-- Form to which JQuery validation will be applied to -->
+<form id = "formname" onsubmit="return false">
+    <label>Enter Minimum Column Value:</label>
+    <input id = "min_column" name= "min_column" type = "text">
+    <br>
+    <label>Enter Maximum Column Value:</label>
+    <input id = "max_column" name= "max_column" type = "text">
+    <br>
+    <label>Enter Minimum Row Value:</label>
+    <input id = "min_row" name="min_row" type ="text">
+    <br>
+    <label>Enter Maximum Row Value:</label>
+    <input id = "max_row" name="max_row" type = "text">
+    <br>
+    <button class="btn btn-primary" type="submit" value="Submit">Make table</button>
+
+  </form>
+
+    <table class = "table table-bordered" id = "multi_table">
+      </table>
+
+  </div>
+
+
+<!--JQuery and Jquery validation plugin CDN -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+  <script src = "JS/table.js"></script>
+  </body>
+  </html>
