@@ -1,0 +1,71 @@
+/*Name: Aaditya Mukherjee
+Affiliation: Computer Science Student at UMass Lowell
+E-mail: Aaditya_Mukherjee@student.uml.edu
+91.61 GUI Programming I, Assignment 7
+Sources: https://www.youtube.com/watch?v=zhxQhgm4yk4&t=200s    (The first two sources were used to figure out how to make multiplication tables with for loops)
+      : https://www.youtube.com/watch?v=zhxQhgm4yk4&t=200s
+      :https://github.com/jquery-validation/jquery-validation/issues/2030 (This page was used to make the greaterThan function)
+      :https://www.w3schools.com/
+
+*/
+
+body{
+  background-color: #6D7179;
+
+}
+
+#wrapper{
+  background-color:white;
+  width: 1200px;
+  margin:auto;
+  padding:50px;
+  text-align: center;
+
+
+}
+
+
+h2{
+
+  text-align: left;
+  font-size: 20px;
+}
+
+th{
+  background-color: black;
+  color:white;
+  text-align:center;
+}
+
+
+#header{
+  color: white;
+  font-family: Courier, Arial, sans-serif;
+  background-color: #324890;
+  border:2px;
+
+
+}
+
+button{
+  margin :20px;
+}
+
+input[type="text"]{
+  width:80px;
+}
+
+
+table{
+  margin :20px;
+  background-color: blue;
+  table-layout: fixed;
+}
+
+.error{
+  color: #E4003D;
+  font-style: italic;
+  font-size:12px;
+  margin-left:10px;
+  font-weight: lighter;
+}
